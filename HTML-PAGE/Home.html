@@ -1,0 +1,109 @@
+﻿<!--Fija FIJA FIJAAAAA-->
+<!-- PONER <!DOCTYPE html>-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Se usa para meta data-->
+    <!-- Caracteres completos -->
+    <meta charset="utf-8" />
+    <!-- El titulo que aparece en el tab de la pagina-->
+    <title>Elige a tu pokemon</title>
+</head>
+<body>
+    <main>
+        <!-- En el main debe haber codigo unico y no repetido -->
+        <h1> Hello World </h1>
+        <h2> Este es un h2 </h2>
+        <h3> Este es un h3 </h3>
+        <h4> Este es un h4 </h4>
+        <h5> Este es un h5 </h5>
+        <h6> Este es un h6 </h6>
+        <h6> Ya no hay mas h's '</h6>
+        <!-- Todo: existen comentarios -->
+        <section>
+            <!-- section facilita la visualizacion y accesibilidad-->
+            <p> Este es un parrafo. </p>
+            <p> Agregando imagen </p>
+            <!-- Ruta del archivo igual que el .html-->
+            <!-- src = source alt = nombre que aparece en caso de error -->
+            <!-- se puede aplicar el tag a(nchor) a imagenes-->
+            <a href="https://www.pokemon.com/el/pokedex/pikachu" target="_blank">
+                <img src="pikachu.png" alt="Imagen de pikachu" width="100" height="100">
+            </a>
+            <!-- a(anchor) para links -- en medio de tags se muestra texto-->
+            <p>
+                <!-- target = "_blank" hace que se abra el link en nuevo tab-->
+                Usar este <a href="https://www.freecodecamp.org" target="_blank"> Link para aprender HTML</a> facilmente
+            </p>
+            <p> Tambien se puede usar <a href="https://www.youtube.com">asi.</a></p>
+        </section>
+        <section>
+            <h2>Listas de pokemon</h2>
+            <h3>Pokemoness iniciales</h3>
+            <!-- Undordered list -->
+            <ul>
+                <li>Charmander</li>
+                <li>Bulbasaur</li>
+                <li>Squirtle</li>
+            </ul>
+            <figure>
+                <img src = "iniciales.jpg" alt = "pokemones iniciales"
+                     width="200" height="100"/>
+            <!-- <em> para enfatizar una palabra o frase-->
+                <figcaption>Elige a <em>tu</em> pokemon</figcaption>
+            </figure>
+            <h3>Pokemones segunda generacion</h3>
+            <!-- lista enumerada -->
+            <ol>
+                <li>Chikorita</li>
+                <li>Cyndaquil</li>
+                <li>Totodile</li>
+            </ol>
+            <figure>
+                <img src="segunda_generacion.jpg" alt="Pokemones iniciales segunda generacion"
+                      width=" 200"/>
+            <!-- Strong es como un bold(negrita)-->
+                <figcaption>Pokemones de la <strong>segunda</strong> generacion</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Formulario elige a tu pokemon</h2>
+            <!-- action = "" indica donde la data se va a subir -->
+            <form action="Home.html">
+                <input type="text" name="pokemon" placeholder="Nombre de su pokemon"
+                       required />
+                <!-- el boton tiene por defecto submit-->
+                <!-- es buena practica asigna la funcion(type) del boton-->
+                <button type="submit">Ingresar</button>
+                <!-- Agregar label para asociar texto con elemento de ingreso de texto -->
+                <!-- es buena practica usar ids para los elementos HTML-->
+                <!-- NOTA: los nombres de los ids deben ser unicos -->
+
+                <!-- Si quieres que solo se seleccione una opcion todos los botones deben 
+                    tenere el mismo "name"-->
+                <!-- Agregar el value para saber donde se sube la data(con que valor)-->
+                <fieldset>
+                    <legend>¿Cual es tu generacion favorita?</legend>
+                    <!-- Se usa para relacionar inputs con labels -->
+                    <label>
+                        <input checked type="radio" id="primera" name="pokemon" value="primera" />Primera
+                    </label>
+                    <label>
+                        <input type="radio" id="segunda" name="pokemon" value="segunda" />Segunda
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Cual es tu elemento favorito?</legend>
+                    <input checked type="checkbox" name="elemento" id="fuego" /> <label for="fuego">Fuego</label>
+                    <input type="checkbox" name="elemento" id="agua"/> <label for="agua">Agua</label>
+                    <input type="checkbox" name="elemento" id="planta"/> <label for="planta">Planta</label>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer>
+        <p>No Copyright - <a href="https://www.github.com/amvz1704" target="_blank">amvz1704</a></p>
+    </footer>
+</body> 
+</html>
