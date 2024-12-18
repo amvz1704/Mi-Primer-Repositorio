@@ -1,0 +1,88 @@
+﻿h1, h2, section {
+    text-align: center;
+}
+h1 {
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', serif;
+    font-style: oblique;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*Se puede usar margenes negativos :000*/
+}
+
+hr {
+    height: 3px;
+    color: transparent;
+    border: none;
+    background-color: none;
+}
+
+a {
+    color: white;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: purple;
+}
+a:active{
+    color:greenyellow;
+}
+
+body{
+    background-image: url("landscape.jpg");
+    font-family: sans-serif;
+}
+.content {
+    width: 90%;
+    background-color: greenyellow;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pokemon-legendario-first p, .pokemon-legendario-second p{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.legendarios {
+    max-width: 500px;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nombre-pl {
+    text-align: left;
+    width: 33%;
+}
+
+.numero-pl {
+    text-align: center;
+    width: 33%;
+}
+
+.tipo-pl {
+    text-align: right;
+    width: 33%;
+}
+/*usual comment*/

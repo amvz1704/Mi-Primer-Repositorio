@@ -2,41 +2,88 @@
 <!-- PONER <!DOCTYPE html>-->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Se usa para meta data-->
     <!-- Caracteres completos -->
     <meta charset="utf-8" />
     <!-- El titulo que aparece en el tab de la pagina-->
     <title>Elige a tu pokemon</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 <body>
+    <!-- Division para diseño -->
+    
     <main>
+        <h1> POKEMON </h1>
         <!-- En el main debe haber codigo unico y no repetido -->
-        <h1> Hello World </h1>
+        <!--
+
         <h2> Este es un h2 </h2>
         <h3> Este es un h3 </h3>
         <h4> Este es un h4 </h4>
         <h5> Este es un h5 </h5>
         <h6> Este es un h6 </h6>
         <h6> Ya no hay mas h's '</h6>
+
+    -->
         <!-- Todo: existen comentarios -->
-        <section>
-            <!-- section facilita la visualizacion y accesibilidad-->
-            <p> Este es un parrafo. </p>
-            <p> Agregando imagen </p>
-            <!-- Ruta del archivo igual que el .html-->
-            <!-- src = source alt = nombre que aparece en caso de error -->
-            <!-- se puede aplicar el tag a(nchor) a imagenes-->
-            <a href="https://www.pokemon.com/el/pokedex/pikachu" target="_blank">
-                <img src="pikachu.png" alt="Imagen de pikachu" width="100" height="100">
-            </a>
-            <!-- a(anchor) para links -- en medio de tags se muestra texto-->
-            <p>
-                <!-- target = "_blank" hace que se abra el link en nuevo tab-->
-                Usar este <a href="https://www.freecodecamp.org" target="_blank"> Link para aprender HTML</a> facilmente
-            </p>
-            <p> Tambien se puede usar <a href="https://www.youtube.com">asi.</a></p>
-        </section>
+        <div class="content">
+            <section>
+                <!-- section facilita la visualizacion y accesibilidad-->
+                <p> Este es un parrafo. </p>
+                <p> Agregando imagen </p>
+                <!-- Ruta del archivo igual que el .html-->
+                <!-- src = source alt = nombre que aparece en caso de error -->
+                <!-- se puede aplicar el tag a(nchor) a imagenes-->
+                <a href="https://www.pokemon.com/el/pokedex/pikachu" target="_blank">
+                    <img src="pikachu.png" alt="Imagen de pikachu" width="100" height="100">
+                </a>
+                <!-- a(anchor) para links -- en medio de tags se muestra texto-->
+                <p>
+                    <!-- target = "_blank" hace que se abra el link en nuevo tab-->
+                    Usar este <a href="https://www.freecodecamp.org" target="_blank"> Link para aprender HTML</a> facilmente
+                </p>
+                <p> Tambien se puede usar <a href="https://www.youtube.com">asi.</a></p>
+            </section>
+        </div>
+        <div class="legendarios">
+            <h2>Pokemones legendarios primera generación</h2>
+            <article class="pokemon-legendario-first">
+                <p class="nombre-pl">Articuno</p><p class="numero-pl"># 0144</p><p class="tipo-pl">Hielo</p>
+            </article>
+            <article class="pokemon-legendario-first">
+                <p class="nombre-pl">Zapdos</p><p class="numero-pl"># 0145</p><p class="tipo-pl">Eléctrico</p>
+            </article>
+            <article class="pokemon-legendario-first">
+                <p class="nombre-pl">Moltres</p><p class="numero-pl"># 0146</p><p class="tipo-pl">Fuego</p>
+            </article>
+            <article class="pokemon-legendario-first">
+                <p class="nombre-pl">Mewtwo</p><p class="numero-pl"># 0146</p><p class="tipo-pl">Psíquico</p>
+            </article>
+        </div>
+        <hr />
+        <div class="legendarios">
+            <h2>Pokemones legendarios segunda generación</h2>
+            <article class="pokemon-legendario-second">
+                <p class="nombre-pl">Raikou</p><p class="numero-pl"># 0243</p><p class="tipo-pl">Eléctrico</p>
+            </article>
+            <article class="pokemon-legendario-second">
+                <p class="nombre-pl">Fuego</p><p class="numero-pl"># 0244</p><p class="tipo-pl">Fuego</p>
+            </article>
+            <article class="pokemon-legendario-second">
+                <p class="nombre-pl">Suicune</p><p class="numero-pl"># 0245</p><p class="tipo-pl">Agua</p>
+            </article>
+            <article class="pokemon-legendario-second">
+                <p class="nombre-pl">Lugia</p><p class="numero-pl"># 0249</p><p class="tipo-pl">Psíquico</p>
+            </article>
+            <article class="pokemon-legendario-second">
+                <p class="nombre-pl">Ho-Oh</p><p class="numero-pl"># 0250</p><p class="tipo-pl">Fuego</p>
+            </article>
+        </div>
+        <hr />
         <section>
             <h2>Listas de pokemon</h2>
             <h3>Pokemoness iniciales</h3>
@@ -47,9 +94,9 @@
                 <li>Squirtle</li>
             </ul>
             <figure>
-                <img src = "iniciales.jpg" alt = "pokemones iniciales"
-                     width="200" height="100"/>
-            <!-- <em> para enfatizar una palabra o frase-->
+                <img src="iniciales.jpg" alt="pokemones iniciales"
+                     width="200" height="100" />
+                <!-- <em> para enfatizar una palabra o frase-->
                 <figcaption>Elige a <em>tu</em> pokemon</figcaption>
             </figure>
             <h3>Pokemones segunda generacion</h3>
@@ -61,11 +108,12 @@
             </ol>
             <figure>
                 <img src="segunda_generacion.jpg" alt="Pokemones iniciales segunda generacion"
-                      width=" 200"/>
-            <!-- Strong es como un bold(negrita)-->
+                     width=" 200" />
+                <!-- Strong es como un bold(negrita)-->
                 <figcaption>Pokemones de la <strong>segunda</strong> generacion</figcaption>
             </figure>
         </section>
+        <hr />
         <section>
             <h2>Formulario elige a tu pokemon</h2>
             <!-- action = "" indica donde la data se va a subir -->
@@ -78,9 +126,8 @@
                 <!-- Agregar label para asociar texto con elemento de ingreso de texto -->
                 <!-- es buena practica usar ids para los elementos HTML-->
                 <!-- NOTA: los nombres de los ids deben ser unicos -->
-
-                <!-- Si quieres que solo se seleccione una opcion todos los botones deben 
-                    tenere el mismo "name"-->
+                <!-- Si quieres que solo se seleccione una opcion todos los botones deben
+            tenere el mismo "name"-->
                 <!-- Agregar el value para saber donde se sube la data(con que valor)-->
                 <fieldset>
                     <legend>¿Cual es tu generacion favorita?</legend>
@@ -92,11 +139,12 @@
                         <input type="radio" id="segunda" name="pokemon" value="segunda" />Segunda
                     </label>
                 </fieldset>
+                <hr />
                 <fieldset>
                     <legend>¿Cual es tu elemento favorito?</legend>
                     <input checked type="checkbox" name="elemento" id="fuego" /> <label for="fuego">Fuego</label>
-                    <input type="checkbox" name="elemento" id="agua"/> <label for="agua">Agua</label>
-                    <input type="checkbox" name="elemento" id="planta"/> <label for="planta">Planta</label>
+                    <input type="checkbox" name="elemento" id="agua" /> <label for="agua">Agua</label>
+                    <input type="checkbox" name="elemento" id="planta" /> <label for="planta">Planta</label>
                 </fieldset>
             </form>
         </section>
